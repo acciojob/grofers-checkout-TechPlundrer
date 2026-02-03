@@ -17,7 +17,7 @@ const getSum = () => {
 
   const totalRow = document.createElement("tr");
   totalRow.classList.add("total-row");
-
+  totalRow.id = "ans";
   const totalCell = document.createElement("td");
   totalCell.colSpan = 2;
   totalCell.innerText = `Total Price = Rs ${total}`;
