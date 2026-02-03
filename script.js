@@ -7,7 +7,7 @@ const getSum = () => {
   let total = 0;
 
   priceCells.forEach(cell => {
-    total += parseFloat(cell.innerText) || ;
+    total += parseFloat(cell.innerText) || 0;
   });
 
   const table = document.querySelector("table");
