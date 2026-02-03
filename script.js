@@ -3,16 +3,16 @@ getSumBtn.append("Get Total Price");
 document.body.appendChild(getSumBtn);
 
 const getSum = () => {
-  const priceCells = document.querySelectorAll(".prices");
+  const priceCells = document.querySelectorAll(".price");
   let total = 0;
 
   priceCells.forEach(cell => {
-    total += parseFloat(cell.innerText) || 0;
+    total += parseFloat(cell.innerText) || ;
   });
 
   const table = document.querySelector("table");
 
-  // Prevent adding total row multiple times
+
   if (document.querySelector(".total-row")) return;
 
   const totalRow = document.createElement("tr");
